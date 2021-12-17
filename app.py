@@ -8,4 +8,4 @@ jira = JIRA(
         basic_auth=(username,token),options=options)
 
 jira.create_issue(summary="Third Issue", description="Yes this is JIRA", issuetype={'name': 'Task'}, project='MB',
-                              assignee={'name': 'lakshmanchinta'})
+                              assignee={'name': 'amitraj'})
