@@ -1,15 +1,17 @@
 from jira import JIRA
 import azure.functions as func
+from azure.appconfiguration import AzureAppConfigurationClient, ConfigurationSetting
+
 
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
     username="amit.894@gmail.com"
-    token="FNZSbBxpLmjAjw17Tnvs3E30"
+    jira_token = os.getenv('AZURE_APP_CONFIG_JIRA_TOKEN')
     options = {
         'server': 'https://amit894.atlassian.net/'}
     jira = JIRA(
-            basic_auth=(username,token),options=options)
+            basic_auth=(username,jira_token),options=options)
 
     jira.create_issue(summary="Third Issue", description="Yes this is JIRA", issuetype={'name': 'Task'}, project='MB',
                                   assignee={'name': 'amitraj'})
