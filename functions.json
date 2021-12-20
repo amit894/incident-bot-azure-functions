@@ -4,6 +4,7 @@
     {
       "authLevel": "function",
       "type": "httpTrigger",
+      "route":"jira"
       "direction": "in",
       "name": "req",
       "methods": [
