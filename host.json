@@ -5,7 +5,8 @@
             "samplingExcludedTypes": "Request",
             "samplingSettings": {
                 "isEnabled": true
-            }
+            },
+        "functions": [ "QueueProcessor", "GitHubWebHook" ],
         }
     }
 }
