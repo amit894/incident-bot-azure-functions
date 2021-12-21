@@ -6,7 +6,7 @@
             "samplingSettings": {
                 "isEnabled": true
             },
-        "functions": [ "QueueProcessor", "GitHubWebHook" ],
+        "functions": [ "main"],
         }
     }
 }
