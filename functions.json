@@ -4,12 +4,8 @@
     {
       "authLevel": "anonymous",
       "type": "httpTrigger",
-      "route":"jira"
       "direction": "in",
-      "name": "req",
-      "methods": [
-        "post"
-      ]
+      "name": "req"
     },
     {
       "type": "http",
