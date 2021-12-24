@@ -65,6 +65,6 @@ jobs:
           app-name: 'medium-blog'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8444399573D945D89819A3567EAB9DC5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_92022D77A9104794A2661FCF0B64EE61 }}
           scm-do-build-during-deployment: true
           enable-oryx-build: true
